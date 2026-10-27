@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Александр ♡ Карина | Свадьба 07.07.2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ОБЛОЖКА -->
+  <div class="cover" id="cover">
+    <div class="cover-photo"></div>
+    <div class="cover-content">
+      <p class="eyebrow">С любовью приглашаем</p>
+      <h1>Приглашение<br><em>на свадьбу</em></h1>
+      <div class="names">Александр <span>♥</span> Карина</div>
+      <p class="cover-date">07 · 07 · 2027</p>
+      <button class="open-btn" onclick="openInvitation()">
+        Открыть приглашение ♡
+      </button>
+    </div>
+    <div class="corner-date">07<br><small>июля</small><br>2027</div>
+    <span class="flower flower-left">❀</span>
+    <span class="flower flower-right">✿</span>
+  </div>
+
+  <header>
+    <a href="#top" class="logo">А <span>♥</span> К</a>
+    <nav>
+      <a href="#invitation">Приглашение</a>
+      <a href="#countdown">Таймер</a>
+      <a href="#location">Место</a>
+      <a href="#rsvp">Ответить</a>
+    </nav>
+    <a href="#calendar" class="header-date">07.07.2027</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ТЕКСТ ПРИГЛАШЕНИЯ -->
+    <section class="invitation section" id="invitation">
+      <div class="stamp">с любовью<br><span>♡</span></div>
+      <p class="eyebrow">Наш особенный день</p>
+      <h2>Две истории.<br><em>Одна любовь.</em></h2>
+      <div class="ornament">❦</div>
+
+      <h3>Дорогие родные и друзья!</h3>
+      <p>
+        В нашей жизни начинается новая, удивительная глава —
+        мы создаём семью. И нам очень хочется разделить этот
+        светлый день с теми, кто дорог нашему сердцу.
+      </p>
+      <p>
+        Будем счастливы видеть вас рядом, услышать ваши поздравления,
+        обняться и вместе сохранить самые тёплые воспоминания.
+      </p>
+      <p class="signature">С любовью, Александр и Карина</p>
+      <div class="bow">🎀</div>
+    </section>
+
+    <!-- ОБРАТНЫЙ ОТСЧЁТ -->
+    <section class="countdown-section" id="countdown">
+      <div class="countdown-bg"></div>
+      <div class="countdown-card">
+        <p class="eyebrow">Считаем мгновения</p>
+        <h2>До нашей свадьбы</h2>
+
+        <div class="timer">
+          <div><strong id="days">000</strong><span>дней</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>часов</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>минут</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>секунд</span></div>
+        </div>
+        <p class="timer-note">Каждая секунда приближает нас к «да» ♡</p>
+      </div>
+    </section>
+
+    <!-- КАЛЕНДАРЬ -->
+    <section class="calendar-section section" id="calendar">
+      <p class="eyebrow">Сохраните дату</p>
+      <h2>Июль <em>2027</em></h2>
+
+      <div class="calendar">
+        <div class="weekdays">
+          <span>ПН</span><span>ВТ</span><span>СР</span>
+          <span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
+        </div>
+        <div class="days-grid" id="calendarGrid"></div>
+      </div>
+
+      <p class="calendar-note">Нажмите на сердечко, чтобы отправить любовь 💗</p>
+
+      <div class="time">
+        <span class="clock">◷</span>
+        <div>
+          <small>Начало торжества</small>
+          <strong>16:00</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- МЕСТО ПРОВЕДЕНИЯ -->
+    <section class="location-section" id="location">
+      <div class="couple-photo"></div>
+      <div class="location-content">
+        <p class="eyebrow">Будем ждать вас</p>
+        <h2>Место, где<br><em>начнётся наша семья</em></h2>
+        <p>
+          Приглашаем вас разделить с нами этот особенный день,
+          наполненный любовью, улыбками и счастьем.
+        </p>
+        <div class="address">
+          <span>⌖</span>
+          <div>
+            <strong>Кокшетау, Казахстан</strong>
+            <small>Банкетный зал — адрес уточняется</small>
+          </div>
+        </div>
+        <p class="address-note">
+          Точный адрес и детали проезда появятся здесь позже.
+        </p>
+      </div>
+    </section>
+
+    <!-- ОРГАНИЗАТОР -->
+    <section class="organizer section">
+      <div class="organizer-frame">
+        <span class="frame-flower">❀</span>
+        <p class="eyebrow">По всем вопросам</p>
+        <h2>Организатор</h2>
+        <p class="organizer-name">И. Ф. О.</p>
+        <small>Контакты организатора будут добавлены позже</small>
+      </div>
+    </section>
+
+    <!-- ОТВЕТ ГОСТЯ -->
+    <section class="rsvp-section" id="rsvp">
+      <div class="rsvp-inner">
+        <p class="eyebrow">Ваш ответ очень важен</p>
+        <h2>Вы будете<br><em>с нами?</em></h2>
+        <p class="rsvp-intro">
+          Уважаемый гость, пожалуйста, подтвердите своё
+          присутствие на свадьбе.
+        </p>
+
+        <form id="rsvpForm">
+          <label for="guestName">Ваше имя и фамилия</label>
+          <input
+            type="text"
+            id="guestName"
+            name="guestName"
+            placeholder="Например, Анна Иванова"
+            required
+          >
+
+          <fieldset>
+            <legend>Выберите подходящий вариант</legend>
+
+            <label class="choice">
+              <input type="radio" name="attendance" value="Я иду!" required>
+              <span>Я иду!</span>
+            </label>
+
+            <label class="choice">
+              <input type="radio" name="attendance" value="Приду с супругом/ой">
+              <span>Я приду с супругом/ой</span>
+            </label>
+
+            <label class="choice">
+              <input type="radio" name="attendance" value="Не смогу приехать">
+              <span>К сожалению, я не смогу приехать :(</span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="submit-btn">Отправить ответ ♡</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+
+        <p class="privacy-note">
+          Для общего списка гостей необходимо подключить форму
+          к Google Sheets или серверу.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>❦</div>
+    <p>Александр <span>♥</span> Карина</p>
+    <small>07 июля 2027 · С любовью, навсегда</small>
+  </footer>
+
+  <div id="heartBurst"></div>
+
+  <script>
+    // Открытие приглашения
+    function openInvitation() {
+      document.getElementById('cover').classList.add('hidden');
+      document.body.classList.remove('locked');
+    }
+
+    document.body.classList.add('locked');
+
+    // Обратный отсчёт: 7 июля 2027, 16:00, Кокшетау (UTC+5)
+    const weddingDate = new Date('2027-07-07T16:00:00+05:00').getTime();
+
+    function updateTimer() {
+      let difference = weddingDate - Date.now();
+
+      if (difference <= 0) {
+        document.getElementById('days').textContent = '0';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+        document.querySelector('.timer-note').textContent =
+          'Сегодня наш особенный день! ♥';
+        return;
+      }
+
+      const days = Math.floor(difference / 86400000);
+      difference %= 86400000;
+
+      const hours = Math.floor(difference / 3600000);
+      difference %= 3600000;
+
+      const minutes = Math.floor(difference / 60000);
+      const seconds = Math.floor((difference % 60000) / 1000);
+
+      document.getElementById('days').textContent = days;
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+
+    // Календарь июля 2027 года
+    const calendarGrid = document.getElementById('calendarGrid');
+    const firstDay = (new Date(2027, 6, 1).getDay() + 6) % 7;
+
+    for (let i = 0; i < firstDay; i++) {
+      const empty = document.createElement('span');
+      empty.className = 'empty-day';
+      calendarGrid.appendChild(empty);
+    }
+
+    for (let day = 1; day <= 31; day++) {
+      if (day === 7) {
+        const heart = document.createElement('button');
+        heart.type = 'button';
+        heart.className = 'heart-day';
+        heart.innerHTML = '<span>♥</span><b>7</b>';
+        heart.setAttribute('aria-label', '7 июля — день свадьбы');
+        heart.addEventListener('click', createHearts);
+        calendarGrid.appendChild(heart);
+      } else {
+        const cell = document.createElement('span');
+        cell.className = 'day';
+        cell.textContent = day;
+        calendarGrid.appendChild(cell);
+      }
+    }
+
+    // Летящие сердечки
+    function createHearts() {
+      const container = document.getElementById('heartBurst');
+      const symbols = ['♥', '♡', '💗', '❀'];
+
+      for (let i = 0; i < 24; i++) {
+        const heart = document.createElement('span');
+        heart.className = 'flying-heart';
+        heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.setProperty('--drift', (Math.random() * 180 - 90) + 'px');
+        heart.style.animationDelay = Math.random() * 0.4 + 's';
+        container.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 2300);
+      }
+    }
+
+    // Демонстрационная форма RSVP
+    document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('guestName').value.trim();
+      const attendance = new FormData(this).get('attendance');
+
+      if (!name || !attendance) return;
+
+      let replies = [];
+      try {
+        replies = JSON.parse(localStorage.getItem('weddingReplies') || '[]');
+      } catch (error) {}
+
+      replies.push({
+        name: name,
+        attendance: attendance,
+        date: new Date().toISOString()
+      });
+
+      localStorage.setItem('weddingReplies', JSON.stringify(replies));
+
+      document.getElementById('formMessage').textContent =
+        'Спасибо, ' + name + '! Ваш ответ сохранён ♡';
+
+      this.reset();
+    });
+  </script>
+</body>
+</html>
